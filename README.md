@@ -72,33 +72,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-The first run downloads the model checkpoint from the Hub, so it needs
-an internet connection the first time. `@spaces.GPU` is a no-op outside
-of a Hugging Face ZeroGPU Space, so this runs fine locally on CPU (or a
-local GPU if you have one) — just slower.
-
-## Deploying on Hugging Face Spaces
-
-This app targets Hugging Face's **ZeroGPU** — free, on-demand GPU
-access that currently only supports the Gradio SDK.
-
-```bash
-hf auth login
-hf repos create <your-username>/hybrid-skin-disease-classifier --type space --space-sdk gradio --flavor zero-a10g
-hf upload <your-username>/hybrid-skin-disease-classifier . . --repo-type space
-```
-
-Notes:
-
-- ZeroGPU is only available to accounts in good standing that are at
-  least 30 days old (or that have been granted a community GPU grant
-  from the target Space's Settings tab). New accounts will see a 402
-  error until then.
-- Static and CPU-basic/Docker Spaces cannot run this app — Static
-  Spaces don't execute Python at all, and CPU-basic/Docker currently
-  require a PRO subscription. ZeroGPU is the only free path for a
-  live-inference Gradio app on Hugging Face at the time of writing.
-
 ## Project structure
 
 ```
