@@ -748,13 +748,7 @@ body {
 # ============================================================
 
 with gr.Blocks(
-    title="SkinAI — Skin Disease Classifier",
-    css=CSS,
-    theme=gr.themes.Soft(
-        primary_hue="blue",
-        secondary_hue="slate",
-        neutral_hue="slate"
-    )
+    title="SkinAI — Skin Disease Classifier"
 ) as demo:
 
     # --------------------------------------------------------
@@ -1058,5 +1052,11 @@ with gr.Blocks(
 if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
-        server_port=int(os.environ.get("PORT", 7860))
+        server_port=int(os.environ.get("PORT", 7860)),
+        css=CSS,
+        theme=gr.themes.Soft(
+            primary_hue="blue",
+            secondary_hue="slate",
+            neutral_hue="slate"
+        )
     )
