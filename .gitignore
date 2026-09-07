@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+
+.venv/
+venv/
+env/
+
+.DS_Store
+*.log
+
+# model checkpoints stay on the Hugging Face Hub, not in git
+*.pt
+*.pth
+*.ckpt
+
+# real dataset stays local / referenced by path, not committed
+data/
+
+.idea/
+.vscode/
+
+.streamlit/secrets.toml

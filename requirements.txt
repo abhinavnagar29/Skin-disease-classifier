@@ -1,0 +1,10 @@
+streamlit>=1.32
+torch
+torchvision
+huggingface_hub
+Pillow
+numpy
+matplotlib
+pandas
+scikit-learn
+tabulate
