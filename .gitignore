@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+
+.venv/
+venv/
+env/
+
+.DS_Store
+*.log
+
+# local model cache if anyone downloads the checkpoint for testing
+*.pt
+!*.example.pt
+
+.idea/
+.vscode/
