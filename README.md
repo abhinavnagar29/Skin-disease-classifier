@@ -5,6 +5,8 @@ feature extractors, with Grad-CAM interpretability, a real evaluation
 pipeline, error analysis, calibration analysis, robustness testing, and
 inference benchmarking — deployed as a Streamlit app.
 
+https://skin-disease-classifier-fq9tu2ysuqwme9l9gds9xc.streamlit.app/
+
 > **Medical disclaimer:** This is a research/educational ML project.
 > It is not a certified medical device, has not been clinically
 > validated, and must never be used to make medical decisions. If you
