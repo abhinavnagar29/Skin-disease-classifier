@@ -1,0 +1,37 @@
+{
+  "input_resolution": 224,
+  "runs": [
+    {
+      "device": "cpu",
+      "model_load_time_sec": 1.008301019668579,
+      "single_image_latency": {
+        "mean_ms": 127.27004546031822,
+        "min_ms": 98.29042600176763,
+        "max_ms": 321.00654700479936,
+        "p50_ms": 119.7673670030781
+      },
+      "batch_throughput": [
+        {
+          "batch_size": 1,
+          "images_per_sec": 8.647088250253189,
+          "sec_per_batch": 0.11564586495005642
+        },
+        {
+          "batch_size": 4,
+          "images_per_sec": 10.35906588471493,
+          "sec_per_batch": 0.3861352022002393
+        },
+        {
+          "batch_size": 8,
+          "images_per_sec": 10.972950542241628,
+          "sec_per_batch": 0.7290655297500053
+        },
+        {
+          "batch_size": 16,
+          "images_per_sec": 10.498229725269155,
+          "sec_per_batch": 1.5240664777498751
+        }
+      ]
+    }
+  ]
+}

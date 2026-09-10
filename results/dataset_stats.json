@@ -1,0 +1,223 @@
+{
+  "splits": {
+    "train": {
+      "total_images": 13898,
+      "num_classes": 22,
+      "per_class_counts": {
+        "Acne": 593,
+        "Actinic_Keratosis": 748,
+        "Benign_tumors": 1093,
+        "Bullous": 504,
+        "Candidiasis": 248,
+        "DrugEruption": 547,
+        "Eczema": 1010,
+        "Infestations_Bites": 524,
+        "Lichen": 553,
+        "Lupus": 311,
+        "Moles": 361,
+        "Psoriasis": 820,
+        "Rosacea": 254,
+        "Seborrh_Keratoses": 455,
+        "SkinCancer": 693,
+        "Sun_Sunlight_Damage": 312,
+        "Tinea": 923,
+        "Unknown_Normal": 1651,
+        "Vascular_Tumors": 543,
+        "Vasculitis": 461,
+        "Vitiligo": 714,
+        "Warts": 580
+      },
+      "max_class_count": 1651,
+      "min_class_count": 248,
+      "imbalance_ratio": 6.657258064516129,
+      "corrupted_images": 0
+    },
+    "test": {
+      "total_images": 1546,
+      "num_classes": 22,
+      "per_class_counts": {
+        "Acne": 65,
+        "Actinic_Keratosis": 83,
+        "Benign_tumors": 121,
+        "Bullous": 55,
+        "Candidiasis": 27,
+        "DrugEruption": 61,
+        "Eczema": 112,
+        "Infestations_Bites": 60,
+        "Lichen": 61,
+        "Lupus": 34,
+        "Moles": 40,
+        "Psoriasis": 88,
+        "Rosacea": 28,
+        "Seborrh_Keratoses": 51,
+        "SkinCancer": 77,
+        "Sun_Sunlight_Damage": 34,
+        "Tinea": 102,
+        "Unknown_Normal": 189,
+        "Vascular_Tumors": 60,
+        "Vasculitis": 52,
+        "Vitiligo": 82,
+        "Warts": 64
+      },
+      "max_class_count": 189,
+      "min_class_count": 27,
+      "imbalance_ratio": 7.0,
+      "corrupted_images": 0
+    }
+  },
+  "cross_split_leakage": {
+    "num_duplicate_images_across_splits": 63,
+    "examples": [
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Acne",
+            "path": "data/SkinDisease/SkinDisease/train/Acne/acne-cystic-2.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Eczema",
+            "path": "data/SkinDisease/SkinDisease/test/Eczema/eczema-hand-16.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Acne",
+            "path": "data/SkinDisease/SkinDisease/train/Acne/acne-excoriated-1.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Acne",
+            "path": "data/SkinDisease/SkinDisease/test/Acne/acne-excoriated-2.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Acne",
+            "path": "data/SkinDisease/SkinDisease/train/Acne/acne-pustular-18.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Acne",
+            "path": "data/SkinDisease/SkinDisease/test/Acne/acne-cystic-11.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Actinic_Keratosis",
+            "path": "data/SkinDisease/SkinDisease/train/Actinic_Keratosis/actinic-cheilitis-sq-cell-lip-23.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Actinic_Keratosis",
+            "path": "data/SkinDisease/SkinDisease/test/Actinic_Keratosis/actinic-cheilitis-sq-cell-lip-54.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Bullous",
+            "path": "data/SkinDisease/SkinDisease/train/Bullous/images43.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Bullous",
+            "path": "data/SkinDisease/SkinDisease/test/Bullous/image4.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Candidiasis",
+            "path": "data/SkinDisease/SkinDisease/train/Candidiasis/candida-groin-10.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Tinea",
+            "path": "data/SkinDisease/SkinDisease/test/Tinea/tinea-groin-75.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Candidiasis",
+            "path": "data/SkinDisease/SkinDisease/train/Candidiasis/candida-groin-4.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Tinea",
+            "path": "data/SkinDisease/SkinDisease/test/Tinea/13TineaGroin34.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Tinea",
+            "path": "data/SkinDisease/SkinDisease/test/Tinea/tinea-groin-89.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "Candidiasis",
+            "path": "data/SkinDisease/SkinDisease/train/Candidiasis/candida-groin-5.jpeg"
+          },
+          {
+            "split": "train",
+            "class": "Tinea",
+            "path": "data/SkinDisease/SkinDisease/train/Tinea/tinea-groin-83.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "Tinea",
+            "path": "data/SkinDisease/SkinDisease/test/Tinea/13TineaGroin143.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "DrugEruption",
+            "path": "data/SkinDisease/SkinDisease/train/DrugEruption/drug-eruption-photosensitivity-6.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "DrugEruption",
+            "path": "data/SkinDisease/SkinDisease/test/DrugEruption/drug-eruption-photosensitivity-1.jpeg"
+          }
+        ]
+      },
+      {
+        "locations": [
+          {
+            "split": "train",
+            "class": "DrugEruption",
+            "path": "data/SkinDisease/SkinDisease/train/DrugEruption/drug-eruptions-54.jpeg"
+          },
+          {
+            "split": "test",
+            "class": "DrugEruption",
+            "path": "data/SkinDisease/SkinDisease/test/DrugEruption/drug-eruptions-53.jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}
